@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Essence - Perfumería</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="img/logo.png" alt="Logo Royal Essence" class="logo">
+    <h1>Bienvenidos a la página de Royal Essence</h1>
+    <p>Perfumes exclusivos para hombres</p>
+
+    <div class="redes">
+      <a class="social whatsapp" href="https://wa.me/595986179875" target="_blank" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0012 .5 11.9 11.9 0 003.5 3.5 11.9 11.9 0 00.5 12c0 2 .5 3.9 1.5 5.6L1 23l5.4-1.4A11.9 11.9 0 0012 23.5c6.2 0 11.5-5.3 11.5-11.5 0-3.1-1.2-6-3.0-8.5zM12 21c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3 .9.9-3-.2-.4A9 9 0 013 12 9 9 0 0112 3c4.96 0 9 4.04 9 9S16.96 21 12 21z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <a class="social instagram" href="https://www.instagram.com/royal_essence_vca" target="_blank" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.3A4.7 4.7 0 1016.7 13 4.7 4.7 0 0012 8.3zm6.4-3.6a1.1 1.1 0 11-1.1 1.1 1.1 1.1 0 011.1-1.1z"/></svg>
+        <span>Instagram</span>
+      </a>
+    </div>
+    <!-- notice moved to footer for higher visibility -->
+  </header>
+
+  <!-- CATALOGO -->
+  <section class="catalogo">
+
+    <h2>Catálogo de Perfumes</h2>
+
+    <div class="search-bar">
+      <input id="search" type="search" placeholder="Buscar producto por nombre o descripción...">
+    </div>
+
+    <div class="grid">
+
+      <!-- PRODUCTO 1 -->
+      <div class="card">
+        <img src="img/perfume1.jpg" alt="Perfume 1">
+        <h3>Perfume 9PM REBEL</h3>
+        <p>Es un perfume dulce, afrutado y amaderado. 
+            Destaca por su alta duración y estela pesada, lo que lo hace perfecto 
+            para la noche o climas frescos.</p>
+        <p class="precio">₲ 350000</p>
+        <button onclick="pedir('Perfume 9PM REBEL', 350000)">Pedir por WhatsApp</button>
+      </div>
+
+      <!-- PRODUCTO 2 -->
+      <div class="card">
+        <img src="img/perfume2.jpg" alt="Perfume 2">
+        <h3> fakhar lattafa black</h3>
+        <p>Fragancia premium y sofisticada.</p>
+        <p class="precio">₲ 220000</p>
+        <button onclick="pedir(' fakhar lattafa black', 220000)">Pedir por WhatsApp</button>
+      </div>
+
+      <!-- PRODUCTO 3 -->
+      <div class="card">
+        <img src="img/perfume3.jpg" alt="Perfume 3">
+        <h3>Odysey Home</h3>
+        <p>Es un perfume con un aroma oriental, dulce y especiado.</p>
+        <p class="precio">₲ 180000</p>
+        <button onclick="pedir('Odysey Home', 180000)">Pedir por WhatsApp</button>
+      </div>
+      <!-- PRODUCTO 4 -->
+      <div class="card">
+        <img src="img/perfume4.jpg" alt="Perfume 3">
+        <h3>Asad bourbon</h3>
+        <p>Es una fragancia oriental especiada para hombres.
+            Huele a una combinación cálida, dulce y adictiva de vainilla, chocolate oscuro y licor..</p>
+        <p class="precio">₲ 100000</p>
+        <button onclick="pedir('Asad bourbon', 100000)">Pedir por WhatsApp</button>
+      </div>
+      <!-- PRODUCTO 5 -->
+      <div class="card">
+        <img src="img/perfume5.jpg" alt="Perfume 3">
+        <h3>9pm Tradicional</h3>
+        <p> (versión tradicional) huele a un aroma dulce, frutal y especiado. 
+            Es muy juvenil, llamativo y tiene un toque seductor.</p>
+        <p class="precio">₲ 250000</p>
+        <button onclick="pedir('9pm Tradicional', 250000)">Pedir por WhatsApp</button>
+      </div>
+      <!-- PRODUCTO 6 -->
+      <div class="card">
+        <img src="img/perfume6.jpg" alt="Perfume 3">
+        <h3>LATTAFA FAKHAR GOLD </h3>
+        <p> (versión tradicional) huele a un aroma dulce, frutal y especiado. 
+            Es muy juvenil, llamativo y tiene un toque seductor.</p>
+        <p class="precio">₲ 220000</p>
+        <button onclick="pedir('LATTAFA FAKHAR GOLD ', 250000)">Pedir por WhatsApp</button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-notice">
+      Hacemos delivery dentro de todo el Guairá. También se puede realizar pedido por WhatsApp. Pagos: transferencia o efectivo.
+    </div>
+    <p>© 2026 Royal Essence - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
